@@ -1,0 +1,22 @@
+runtime: nodejs
+env: flex
+
+handlers:
+  - url: /graphql
+    secure: always
+    redirect_http_response_code: 301
+    script: auto
+
+# beta_settings:
+#   cloud_sql_instances: blendsi-dev:us-central1:blendsi-postgres-dev
+
+# env_variables:
+#   DATABASE_HOST: blendsi-dev:us-central1:blendsi-postgres-dev
+#   DATABASE: blendsi
+#   DATABASE_USER: blendsi
+#   DATABASE_PASSWORD: <password-goes-here>
+#   SEQUELIZE_LOGGING: true
+#   GOOGLE_CLOUD_PROJECT: blendsi-dev
+
+manual_scaling:
+  instances: 1
