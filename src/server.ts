@@ -20,3 +20,4 @@ httpServer.listen({ port: 3000 }, (): void =>
     `\n🚀      GraphQL is now running on http://localhost:3000/graphql`
   )
 );
+app.get("/", (req, res) => res.send("this is an app"));
